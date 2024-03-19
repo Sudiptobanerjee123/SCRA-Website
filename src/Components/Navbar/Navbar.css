@@ -1,0 +1,68 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    text-shadow: -2px -1px 0 rgb(60, 60, 60), 0.5px -1px 0 rgb(60, 60, 60);
+  }
+  .logo-text {
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 75px;
+  }
+  body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding-right: 120px;
+  }
+  .nav-links a {
+    color: white;
+  }
+  .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 14px;
+    text-shadow: none;
+  }
+  .menu li:hover {
+    background-color: rgb(137, 9, 9);
+    border-radius: 10px;
+    transition: 0.3s ease;
+  }
+  .menu li {
+    padding: 5px 10px;
+  }
+  .research-profile {
+    position:relative
+  }
+  .dropdown {
+    background-color: black;
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    text-shadow: none;
+    border-radius: 8px;
+    top: 40px;
+  } 
+  .dropdown li + li {
+    margin-top: 10px;
+  }
+  
+  .dropdown li {
+    padding: 0.5em 1em;
+    width: 12em;
+    text-align: left;
+  }
+  .research-profile:hover .dropdown{
+    display: block;
+  }
+  
