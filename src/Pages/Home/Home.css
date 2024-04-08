@@ -66,7 +66,6 @@ body {
   margin: 0 auto;
   background: linear-gradient(90deg, transparent, #c8c7da, transparent); /* Changed color */
   border-radius: 8px; /* Rounded corners for a more appealing look */
-  animation: lineAnimation 1.5s ease-in-out infinite; /* Adjusted animation duration */
 }
 
 @keyframes lineAnimation {

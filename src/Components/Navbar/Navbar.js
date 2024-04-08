@@ -2,11 +2,14 @@
 import React from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
+import logo from "../../Images/SCRA-logo.jpeg"
 
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="logo-text">SCRA</div>
+      <div className="logo-text">
+        <img src={logo} alt="SCRA Logo" />
+      </div>
       <ul className="nav-links">
         <div className="menu">
           <li>
@@ -21,25 +24,7 @@ function Navbar() {
           </li>
           <li className="research-profile">
             <a href="/">Research</a>
-            <ul className="dropdown">
-              <li>
-                <a href="/">Computer Science </a>
-              </li>
-              <li>
-                <a href="/">Electronics</a>
-              </li>
-              <li>
-                <a href="/">Mathematics</a>
-              </li>
-              <li>
-                <a href="/">Chemistry</a>
-              </li>
-              <li>
-                <a href="/">Psychology</a>
-              </li>
-            </ul>
           </li>
-
           <li>
             <a href="/">Testimonials</a>
           </li>

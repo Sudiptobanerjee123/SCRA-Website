@@ -17,62 +17,135 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Roboto', sans-serif; /* Use your preferred modern font */
+  font-family: "Roboto", sans-serif; /* Use your preferred modern font */
 }
-
+.section-box .vision-text {
+  border: 2px solid #d80e0e; /* Border color */
+  border-radius: 8px; /* Border radius */
+  padding: 20px; /* Padding inside the card */
+  margin-top: 20px; /* Top margin for separation */
+}
 .section-box h2 {
   color: #fff; /* White text color */
   margin-bottom: 10px; /* Adjust spacing between heading and line */
-  opacity: 0; /* Initially set opacity to 0 */
-  transform: translateY(20px);
-  animation: fadeInUpText 4s ease-in-out infinite; /* Animation for fading in text */
+  opacity: 1; /* Set opacity to 1 to ensure it appears */
 }
 
-.section-box p {
+.section-box .vision-text {
   color: #ccc; /* Light gray text color */
-  opacity: 0; /* Initially set opacity to 0 */
-  transform: translateY(20px);
-  animation: fadeInUpText 4s ease-in-out infinite; /* Animation for fading in text */
+  opacity: 1; /* Set opacity to 1 to ensure it appears */
+  margin-top: 20px; /* Add more space between the line and the paragraph */
+  text-align: justify; /* Justify text alignment */
+  text-indent: 1.25px; /* Add indentation to the first line */
+  line-height: 1.5; /* Set line height for better readability */
+  width: 95%;
 }
 
 .line-dashboard {
   position: absolute;
-  bottom: 20px; /* Adjust the distance from the bottom */
+  top: 64px; /* Position the line just below the h2 with additional 10px space */
   left: 50%; /* Center the line */
   transform: translateX(-50%);
   height: 4px;
   border-radius: 3px;
   background-color: #d80e0e;
-  width: 0; /* Initial width set to 0 */
-  opacity: 0; /* Initially set opacity to 0 */
-  animation: slideInLine 4s ease-in-out infinite; /* Animation for sliding in the line and fading in continuously */
+  width: 6%; /* Adjust the initial width as needed */
+  opacity: 1; /* Set opacity to 1 to ensure it appears */
+}
+/* Dashboard.css */
+
+.section-box {
+  background-color: #000000; /* Dark background color */
+  padding: 20px;
+  border-radius: 8px;
+  position: relative; /* Added relative positioning */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif; /* Use your preferred modern font */
 }
 
-@keyframes fadeInUpText {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.section-box h2 {
+  color: #fff; /* White text color */
+  margin-bottom: 10px; /* Adjust spacing between heading and line */
+  opacity: 1; /* Set opacity to 1 to ensure it appears */
 }
 
-@keyframes slideInLine {
-  0% {
-    opacity: 0;
-    width: 0;
-  }
+.representative-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  width: 100%;
+}
 
-  50% {
-    opacity: 1;
-    width: 6%; /* Adjust the final width as needed */
-  }
+.representative-card {
+  background-color: #212121;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #d80e0e; /* Grey border */
+}
 
-  100% {
-    opacity: 0;
-    width: 0;
-  }
+.representative-card h3 {
+  font-size: 1.6em;
+  color: #b3b3b3; /* Darker color for better contrast */
+  font-weight: bold; /* Make the text bold */
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: underline; /* Underline text */
+}
+
+.representative-card .card-text {
+  color: #ccc; /* Light gray text color */
+  font-size: 1.1em; /* Adjust font size */
+  text-align: justify; /* Justify text alignment */
+  line-height: 1.4; /* Set line height for better readability */
+  margin-left: 10px; /* Set left margin */
+  margin-right: 10px; /* Set right margin */
+  padding: 8px; /* Add padding for spacing within the card */
+  flex: 1; /* Allow the paragraph to grow to fill the available space */
+}
+
+.founders-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.founder {
+  width: calc(33.33% - 20px); /* Adjust width to fit 3 founders in a row */
+  margin-bottom: 20px;
+}
+
+.founder-info {
+  text-align: center;
+}
+
+.founder-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.founder-info h3 {
+  color: #ccc;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+.founder-info p {
+  color: #ccc;
+  font-size: 0.9em;
+  margin: 0;
+  line-height: 1.5;
+  text-align: center;
+  font-style: italic;
 }

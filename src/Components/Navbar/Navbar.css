@@ -12,6 +12,11 @@
     font-weight: 700;
     margin-left: 75px;
   }
+  .logo-text img {
+    width: 90px;
+    height: 80px;
+    margin-left: 80px;
+  }
   body {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -30,11 +35,11 @@
   .menu {
     display: flex;
     gap: 1em;
-    font-size: 14px;
+    font-size: 16 px;
     text-shadow: none;
   }
   .menu li:hover {
-    background-color: rgb(137, 9, 9);
+    background-color: #d80e0e;
     border-radius: 10px;
     transition: 0.3s ease;
   }
@@ -43,24 +48,6 @@
   }
   .research-profile {
     position:relative
-  }
-  .dropdown {
-    background-color: black;
-    padding: 1em 0;
-    position: absolute;
-    display: none;
-    text-shadow: none;
-    border-radius: 8px;
-    top: 40px;
-  } 
-  .dropdown li + li {
-    margin-top: 10px;
-  }
-  
-  .dropdown li {
-    padding: 0.5em 1em;
-    width: 12em;
-    text-align: left;
   }
   .research-profile:hover .dropdown{
     display: block;
